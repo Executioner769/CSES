@@ -15,7 +15,7 @@ public:
         // Build Bin Log Array
         binLog.resize(N);
         binLog[1] = 0;
-        for(int i = 2; i <= N; ++i) {
+        for(int i = 2; i < N; ++i) {
             binLog[i] = binLog[i/2] + 1;
         }
         
